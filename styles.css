@@ -15,6 +15,7 @@ main{
     align-items: center;
 }
 
+
 nav{
     display: flex;
     flex-wrap: wrap;
@@ -22,13 +23,16 @@ nav{
     align-items: center;
     border-bottom: 5px solid #6f6f6f;
 }
-nav h1{
+h5{
     color: #717171;
     font-family: 'Playfair Display', serif;
-    font-size: 40px;
+    font-size: 15px;
 }
 .hello{
-    align-items: left;
+    align-items: right;
+    text-align:end;
+
+
 }
 .barre { 
     background-color: #fff;
@@ -60,15 +64,15 @@ nav h1{
 }
 .frond:hover{
     color: #6f6f6f;
-    background-color: aliceblue;
+    background-color: rgb(116, 149, 177);
 }
 .grand{
     font-size: 24px;
     cursor: pointer;
 }
 .deca{
-    width: 150px;
-    height: 140px;
+    width: 100px;
+    height: 90px;
 }
 nav div.onglet{
     margin-top: 3px;
@@ -78,9 +82,12 @@ nav div.onglet a {
     text-decoration: none;
     background-color: #000;
     color: rgb(248, 246, 246);
-    border-bottom: 1px solid black;}
+    border-bottom: 1px solid black;
+    font-size: 15px;
+}
+    
 header{
-    width: 100%;
+    width: 120%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,6 +132,9 @@ header button{
     width: 100%;
     margin: 40px;
     padding: 60px;
+}
+.center{
+    text-align: center;
 }
 .man .content .carte.right{
     display: flex;
@@ -177,6 +187,9 @@ div.slider{
          transform: translateX(0);
      }
  }
+ .man .content .carte .right .wi{
+    align-items: center;
+ }
 .man div.content .carte .right img.one{
     height: 300px;
     width: 200px;
@@ -184,7 +197,7 @@ div.slider{
 }
 
 footer{
-    width: 150%;
+    width: 120%;
     margin-top: 40px;
     border-top: 5px solid #6f6f6f;
     background-color: #000;
