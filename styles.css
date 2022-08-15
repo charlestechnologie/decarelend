@@ -147,7 +147,7 @@ div.slider{
      display:inline-flex;
      align-items: center;
      flex-direction: row;
-     width: calc(500px *4);
+     width: calc(500px *3);
      animation: glisse 15s infinite ease;
      
  }
