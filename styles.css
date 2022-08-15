@@ -71,8 +71,9 @@ h5{
     cursor: pointer;
 }
 .deca{
-    width: 100px;
-    height: 90px;
+    align-items: left;
+    width: 80px;
+    height: 70px;
 }
 nav div.onglet{
     margin-top: 3px;
