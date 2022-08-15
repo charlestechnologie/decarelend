@@ -124,6 +124,9 @@ header button{
     background-color: #000;
     color: white;
 }
+.left{
+    width: 120%;
+}
 .main .content .carte.right{
     flex: 0 0 60vw;
 }
