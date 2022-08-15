@@ -118,14 +118,11 @@ header button{
     margin-bottom: 20px;
 }
 /* flex pour avoir une partie plus grande que d'autre */
-.main .content .carte.left{
-    flex: 0 0 30vw;
-    padding: 20px;
-    background-color: #000;
-    color: white;
-}
+
 .left{
     width: 120%;
+    margin: 40px;
+    padding: 20px;
 }
 .main .content .carte.right{
     flex: 0 0 60vw;
@@ -134,7 +131,7 @@ header button{
     background-color: #717171;
     height: 300px;
     width: 400px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 .main .content .left{
     background-color: #000;
