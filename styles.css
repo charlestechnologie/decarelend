@@ -7,12 +7,10 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    margin: auto;
-    padding: auto;
     font-family: 'Montserrat', sans-serif;
 }
 main{
-    max-width: 980px;
+    max-width: 1580px;
     margin: auto;
 }
 
@@ -81,7 +79,7 @@ nav div.onglet a {
     color: rgb(248, 246, 246);
     border-bottom: 1px solid black;}
 header{
-    width: 150%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,9 +130,10 @@ header button{
 }
 .main div.content .carte .right img{
     background-color: #717171;
-    height: 300px;
-    width: 400px;
+    height: 100%;
+    width: 100%;
     margin-top: 10px;
+    margin-left: 50px;
 }
 .main .content .left{
     background-color: #000;
@@ -142,6 +141,7 @@ header button{
 }
 div.slider{
     overflow:hidden;
+    margin-left: 20px;
  }
  div.slides{
      margin: 20px;
@@ -228,20 +228,22 @@ footer #contact{
     color: rgb(181, 181, 181);
 }
 @media (max-width:680px) {
-    main {
-        width:24.99999%;
+    body{
+        width: 100%;
     }
+
     nav .onglet{
         margin-left: 0px;
         margin-bottom: 20px;
     }    
     .main .carte{
-        margin: 10px;
+        margin: 20px;
     }
     .main .content .carte.right img{
         height: 200px;
         width: 100%;
         margin-top: 0px;
+        margin-left: 20px;
     }
     .main .content .carte{
         display: block;
