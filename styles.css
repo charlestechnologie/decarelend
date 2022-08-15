@@ -65,8 +65,8 @@ nav h1{
     cursor: pointer;
 }
 .deca{
-    width: 120px;
-    height: 110px;
+    width: 150px;
+    height: 140px;
 }
 nav div.onglet{
     margin-top: 3px;
@@ -121,6 +121,7 @@ header button{
 .main .content .carte.left{
     flex: 0 0 30%;
     padding: 20px;
+    font-size: 40px;
     background-color: #000;
     color: white;
 }
@@ -134,8 +135,9 @@ header button{
     margin-top: 5px;
 }
 .main .content .left{
-    flex: 0 0 40%;
+    flex: 0 0 30%;
     padding: 20px;
+    font-size: 40px;
     background-color: #000;
     color: white;
 }
@@ -181,7 +183,7 @@ div.slider{
 }
 
 footer{
-    width: 100%;
+    width: 120%;
     margin-top: 40px;
     border-top: 5px solid #6f6f6f;
     background-color: #000;
