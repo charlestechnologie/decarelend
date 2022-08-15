@@ -78,7 +78,7 @@ nav div.onglet a {
     color: rgb(248, 246, 246);
     border-bottom: 1px solid black;}
 header{
-    width: 100%;
+    width: 150%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,14 +119,14 @@ header button{
 }
 /* flex pour avoir une partie plus grande que d'autre */
 .main .content .carte.left{
-    flex: 0 0 30%;
+    flex: 0 0 30vw;
     padding: 20px;
-    font-size: 40px;
+
     background-color: #000;
     color: white;
 }
 .main .content .carte.right{
-    flex: 0 0 70%;
+    flex: 0 0 60vw;
 }
 .main div.content .carte .right img{
     background-color: #717171;
@@ -135,9 +135,10 @@ header button{
     margin-top: 5px;
 }
 .main .content .left{
-    flex: 0 0 30%;
+    flex: 0 0 30vw;
+    margin-left: 50px;
     padding: 20px;
-    font-size: 40px;
+    font-size: 20px;
     background-color: #000;
     color: white;
 }
@@ -148,7 +149,7 @@ div.slider{
      display:inline-flex;
      align-items: center;
      flex-direction: row;
-     width: calc(500px *4);
+     width: calc(500px *3);
      animation: glisse 15s infinite ease;
      
  }
@@ -183,7 +184,7 @@ div.slider{
 }
 
 footer{
-    width: 120%;
+    width: 150%;
     margin-top: 40px;
     border-top: 5px solid #6f6f6f;
     background-color: #000;
