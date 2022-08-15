@@ -12,6 +12,7 @@ body{
 main{
     max-width: 1580px;
     margin: auto;
+    align-items: center;
 }
 
 nav{
@@ -29,7 +30,7 @@ nav h1{
 .hello{
     align-items: left;
 }
-.barre{ 
+.barre { 
     background-color: #fff;
     overflow: auto;
     border-right: 1px solid #ccc;
@@ -112,7 +113,7 @@ header button{
     flex-direction: column;
     align-items: center;
 }
-.main .content .carte{
+.man .content .carte{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -121,21 +122,21 @@ header button{
 /* flex pour avoir une partie plus grande que d'autre */
 
 .left{
-    width: 120%;
+    width: 100%;
     margin: 40px;
     padding: 60px;
 }
-.main .content .carte.right{
+.man .content .carte.right{
+    display: flex;
     flex: 0 0 60vw;
 }
-.main div.content .carte .right img{
+.man div.content .carte .right img{
     background-color: #717171;
-    height: 100%;
-    width: 100%;
+    height: 200px;
+    width:300px ;
     margin-top: 10px;
-    margin-left: 50px;
 }
-.main .content .left{
+.man .content .left{
     background-color: #000;
     color: #fff;
 }
@@ -176,9 +177,9 @@ div.slider{
          transform: translateX(0);
      }
  }
-.main div.content .carte .right img.one{
-    height: 400px;
-    width: 300px;
+.man div.content .carte .right img.one{
+    height: 300px;
+    width: 200px;
     margin-top: 5px;
 }
 
@@ -227,28 +228,31 @@ footer .services .service p{
 footer #contact{
     color: rgb(181, 181, 181);
 }
-@media (max-width:680px) {
+@media (min-width:680px) {
     body{
         width: 100%;
     }
-
+    header{
+        width: 100%;
+    }
     nav .onglet{
         margin-left: 0px;
         margin-bottom: 20px;
     }    
-    .main .carte{
-        margin: 20px;
+    .man .carte{
+        margin-left: 30px;
     }
-    .main .content .carte.right img{
+    .man .content .carte.right img{
         height: 200px;
         width: 100%;
         margin-top: 0px;
-        margin-left: 20px;
+        margin-left: 10px;
     }
-    .main .content .carte{
+    .man .content .carte{
         display: block;
     }
     footer{
+        width: 100%;
         padding: 30px;
     }
 }
