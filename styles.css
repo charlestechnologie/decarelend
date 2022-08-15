@@ -7,8 +7,8 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    margin: o;
-    padding: 0;
+    margin: auto;
+    padding: auto;
     font-family: 'Montserrat', sans-serif;
 }
 main{
@@ -65,8 +65,8 @@ nav h1{
     cursor: pointer;
 }
 .deca{
-    width: 70px;
-    height: 60px;
+    width: 120px;
+    height: 110px;
 }
 nav div.onglet{
     margin-top: 3px;
@@ -83,12 +83,11 @@ header{
     flex-direction: column;
     align-items: center;
     background-color: #000;
-    width: auto;
     color: white;
 }
 header h1{
     font-family: 'Playfair Display', serif;
-    font-size: 50px;
+    font-size: 40px;
 }
 header h4{
     margin-top: -20px;
@@ -147,7 +146,7 @@ div.slider{
      display:inline-flex;
      align-items: center;
      flex-direction: row;
-     width: calc(500px *3);
+     width: calc(500px *4);
      animation: glisse 15s infinite ease;
      
  }
@@ -165,14 +164,12 @@ div.slider{
          transform: translateX(-500px);
      }
      50%{
-        transform:translateX(-1500px) ;
+        transform:translateX(-500px) ;
      }
      66%{
-         transform: translateX(-1000px);
+         transform: translateX(0);
      }
-     80%{
-        transform: translateX(-500px);
-     }
+     
      100%{
          transform: translateX(0);
      }
@@ -189,7 +186,7 @@ footer{
     border-top: 5px solid #6f6f6f;
     background-color: #000;
     color: white;
-    padding: 30px 100px;
+    padding: 30px 50px;
 }
 footer h1{
     font-family: 'Playfair Display', serif;
@@ -228,7 +225,7 @@ footer .services .service p{
 footer #contact{
     color: rgb(181, 181, 181);
 }
-@media (min-width:600px) {
+@media (max-width:680px) {
     main {
         width:24.99999%;
     }
