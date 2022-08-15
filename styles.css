@@ -28,6 +28,9 @@ nav h1{
     font-family: 'Playfair Display', serif;
     font-size: 40px;
 }
+.hello{
+    align-items: left;
+}
 .barre{ 
     background-color: #fff;
     overflow: auto;
@@ -122,7 +125,7 @@ header button{
 .left{
     width: 120%;
     margin: 40px;
-    padding: 20px;
+    padding: 60px;
 }
 .main .content .carte.right{
     flex: 0 0 60vw;
