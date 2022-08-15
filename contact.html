@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>decarilend entertainment</title>
+</head>
+<body>
+    <h1> contactez-nous</h1>
+    <p> Performances artistiques desirer et autres</p>
+    <form method="post">
+        <div class="formulaire">
+            <input type="text" name="nom" placeholder="Nom">
+            <input type="email" name="email" placeholder="Email"required>
+            <input type="text" name="sujet" placeholder="Sujet">
+            <textarea name="message" placeholder="Entrer votre message" required></textarea>
+            <a href="mailto:charleskurbitsh657@gmail.com"><input type="submit" value="submit" tex-decoration="none"></a>
+        </div>
+    </form>
+<?php
+    include"traitement.html";
+    if(isset($_POST["message"])){
+    $message ="ce message a ete envoyé depuis votre site
+    Nom :" . $_POST["nom"] . "
+    Email :" . $_POST["email"] ."
+    Message :" .$_POST["message"];
+    $retour = mail ("charleskurbitsh657@gmail.com" . $_POST['sujet'] . $_POST['message'] . "Reply-to :" .$_POST['email']);
+    if($retour){
+        echo"l'email a bien ete envoyer.";
+    }
+    }
+?>
+</body>
+</html>

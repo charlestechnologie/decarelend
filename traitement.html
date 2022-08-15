@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<?php
+    $host="localhost";
+    $port=3306;
+    $dbname="contact";
+    $user="root";
+    $pwd="";
+    try{
+        $newBD=new PDO("mysql:host=$host;port=$port;dbname=$dbname",$user,$pwd);
+        echo "connetion etablie";
+    }catch(PDOException $e){
+       die("Erreur :" .$e->getMessage());
+
+    }
+    if(isset($_POST["nom"])&&
+        isset($_POST["email"])&&
+        isset($_POST["sujet"])&&
+        isset($_POST["message"])){
+                    $insertion=$newBD->prepare("INSERT INTO profil VALUES(NULL,:nom,:email,:sujet,:message)");
+                    $insertion->bindvalue(":nom",$_POST["nom"]);
+                    $insertion->bindvalue(":email",$_POST["email"]);
+                    $insertion->bindvalue(":sujet",$_POST["sujet"]);
+                    $insertion->bindvalue(":message",$_POST["message"]);
+                $verification=$insertion->execute();
+                if($verification){
+                    echo"<br> insertion reussite";
+                }else{
+                    echo"Echec d'insertion";
+                }
+    }else{
+        
+     }
+
+    
+
+    
+
+?>
+</body>
+</html>
