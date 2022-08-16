@@ -136,10 +136,7 @@ header button{
 .center{
     text-align: center;
 }
-.man .content .carte.right{
-    display: flex;
-    flex: 0 0 60vw;
-}
+
 .man div.content .carte .right img{
     background-color: #717171;
     height: 200px;
@@ -190,10 +187,14 @@ div.slider{
  .man .content .carte .right .wi{
     align-items: center;
  }
+ 
 .man div.content .carte .right img.one{
     height: 300px;
     width: 200px;
     margin-top: 5px;
+    float:left;
+    margin-left: 10px;
+
 }
 
 footer{
@@ -302,7 +303,7 @@ footer #contact{
         background-color: #000;
         color: rgb(248, 246, 246);
         border-bottom: 1px solid black;
-        font-size: 5px;
+        font-size: 15px;
     }
         
     header{
@@ -355,10 +356,6 @@ footer #contact{
     .center{
         text-align: center;
     }
-    .man .content .carte.right{
-        display: flex;
-        flex: 0 0 60vw;
-    }
     .man div.content .carte .right img{
         background-color: #717171;
         height: 100px;
@@ -409,10 +406,13 @@ footer #contact{
      .man .content .carte .right .wi{
         align-items: center;
      }
+
     .man div.content .carte .right img.one{
-        height: 300px;
-        width: 200px;
+        height: 100px;
+        width: 50px;
         margin-top: 5px;
+        float:left;
+        margin-left: 5px;
     }
     
     footer{
