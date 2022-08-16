@@ -194,7 +194,6 @@ div.slider{
     height: 300px;
     width: 200px;
     margin-top: 5px;
-    float:left;
     margin-left: 10px;
 
 }
@@ -244,11 +243,11 @@ footer .services .service p{
 footer #contact{
     color: rgb(181, 181, 181);
 }
-@media screen and (max-width:360px){
+@media screen and (max-width:500px){
     h5{
         color: #717171;
         font-family: 'Playfair Display', serif;
-        font-size: 10px;
+        font-size: 5px;
     }
     .hello{
         align-items: right;
@@ -395,10 +394,10 @@ footer #contact{
              transform: translateX(-200px);
          }
          50%{
-            transform:translateX(-300px) ;
+            transform:translateX(-200px) ;
          }
          66%{
-             transform: translateX(0);
+             transform: translateX(-100);
          }
          
          100%{
@@ -413,7 +412,6 @@ footer #contact{
         height: 200px;
         width: 100px;
         margin-top: 5px;
-        float:left;
         margin-left: 5px;
     }
     
@@ -457,7 +455,7 @@ footer #contact{
         height: 80px;
     }
     footer .services .service p{
-        width: 100%;
+        max-width: 100%;
     }
     footer #contact{
         color: rgb(181, 181, 181);
