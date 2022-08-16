@@ -243,7 +243,7 @@ footer .services .service p{
 footer #contact{
     color: rgb(181, 181, 181);
 }
-@media screen and (max-width:500px){
+@media screen and (max-width:600px){
     h5{
         color: #717171;
         font-family: 'Playfair Display', serif;
@@ -308,7 +308,7 @@ footer #contact{
     }
         
     header{
-        width: 120%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -350,11 +350,11 @@ footer #contact{
     /* flex pour avoir une partie plus grande que d'autre */
     
     .left{
-        margin: 10px;
-        padding: 15px;
+        margin: 5px;
+        padding: 10px;
     }
     .center{
-        width:120%;
+        width:100%;
         text-align: center;
     }
     .man div.content .carte .right img{
@@ -364,6 +364,7 @@ footer #contact{
         margin-top: 10px;
     }
     .man .content .left{
+        width: 1;
         background-color: #000;
         color: #fff;
     }
@@ -416,7 +417,7 @@ footer #contact{
     }
     
     footer{
-        width: 120%;
+        width: 100%;
         margin-top: 40px;
         border-top: 5px solid #6f6f6f;
         background-color: #000;
