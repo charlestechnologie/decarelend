@@ -71,9 +71,8 @@ h5{
     cursor: pointer;
 }
 .deca{
-    align-items: left;
     width: 80px;
-    height: 70px;
+    height: 90px;
 }
 nav div.onglet{
     margin-top: 3px;
@@ -242,31 +241,223 @@ footer .services .service p{
 footer #contact{
     color: rgb(181, 181, 181);
 }
-@media (min-width:680px) {
-    body{
-        width: 100%;
+@media screen and (max-width:480px){
+    h5{
+        color: #717171;
+        font-family: 'Playfair Display', serif;
+        font-size: 10px;
     }
+    .hello{
+        align-items: right;
+        text-align:end;
+    
+    
+    }
+    .barre { 
+        background-color: #fff;
+        overflow: auto;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        font-size: 10px;
+        position: absolute;
+        display: none;
+        z-index: 1;
+    }
+    .barre-element{
+        display: block;
+        padding: 4px 8px;
+        border: none;
+        cursor: pointer;
+    }
+    .bouton{
+        width: 100%;
+        display: 4px 8px;
+        text-decoration: none;
+        color: inherit;
+        background-color: inherit;
+        text-align: center;
+    }
+    .fond{
+        color: rgb(5, 5, 5);
+        background-color: #f8fafc;
+    }
+    .frond:hover{
+        color: #6f6f6f;
+        background-color: rgb(116, 149, 177);
+    }
+    .grand{
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .deca{
+        width: 50px;
+        height: 60px;
+    }
+    nav div.onglet{
+        margin-top: 3px;
+        margin-left: 150px;
+    }
+    nav div.onglet a {
+        text-decoration: none;
+        background-color: #000;
+        color: rgb(248, 246, 246);
+        border-bottom: 1px solid black;
+        font-size: 5px;
+    }
+        
     header{
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #000;
+        color: white;
     }
-    nav .onglet{
-        margin-left: 0px;
-        margin-bottom: 20px;
-    }    
-    .man .carte{
-        margin-left: 30px;
+    header h1{
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
     }
-    .man .content .carte.right img{
-        height: 200px;
-        width: 100%;
-        margin-top: 0px;
-        margin-left: 10px;
+    header h4{
+        margin-top: -10px;
+        font-size: 10px;
+        text-align: center;
+        border-bottom: 1px solid white;
+    }
+    header button{
+        padding: 5px 10px;
+        background-color: white;
+        color: #000;
+        border: none;
+        font-size: 15px;
+        font-family: 'Playfair Display', serif;
+        outline: none;
+        cursor: pointer;
+    }
+    .main{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .man .content .carte{
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10px;
     }
-    footer{
+    /* flex pour avoir une partie plus grande que d'autre */
+    
+    .left{
         width: 100%;
+        margin: 20px;
         padding: 30px;
+    }
+    .center{
+        text-align: center;
+    }
+    .man .content .carte.right{
+        display: flex;
+        flex: 0 0 60vw;
+    }
+    .man div.content .carte .right img{
+        background-color: #717171;
+        height: 100px;
+        width:200px ;
+        margin-top: 10px;
+    }
+    .man .content .left{
+        background-color: #000;
+        color: #fff;
+    }
+    div.slider{
+        overflow:hidden;
+        margin-left: 10px;
+     }
+     div.slides{
+         margin: 20px;
+         display:inline-flex;
+         align-items: center;
+         flex-direction: row;
+         width: calc(200px *2);
+         animation: glisse 15s infinite ease;
+         
+     }
+     .slider{
+         opacity: 0.9;
+     }
+     @keyframes glisse{
+         0%{
+             transform: translateX(0);
+         }
+         10%{
+             transform: translateX(0);
+         }
+         33%{
+             transform: translateX(-200px);
+         }
+         50%{
+            transform:translateX(-300px) ;
+         }
+         66%{
+             transform: translateX(0);
+         }
+         
+         100%{
+             transform: translateX(0);
+         }
+     }
+     .man .content .carte .right .wi{
+        align-items: center;
+     }
+    .man div.content .carte .right img.one{
+        height: 300px;
+        width: 200px;
+        margin-top: 5px;
+    }
+    
+    footer{
+        width: 120%;
+        margin-top: 40px;
+        border-top: 5px solid #6f6f6f;
+        background-color: #000;
+        color: white;
+        padding: 30px 50px;
+    }
+    footer h1{
+        font-family: 'Playfair Display', serif;
+        border-bottom: 1px solid white;
+        width: 25%;
+        padding-bottom: 1px;
+    }
+    footer .services{
+        margin-top: -10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer .services .service{
+        margin-right: 30px;
+        padding: 20px;
+    }
+    div.pied{
+        background-color: #717171;
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        width:3%;
+        height: 5%;
+    }
+    .pied .one{
+        background-color: #f8fafc;
+        margin: 5px;
+    }
+    .pied .pie{
+        width: 50px;
+        height: 40px;
+    }
+    footer .services .service p{
+        max-width: 100%;
+    }
+    footer #contact{
+        color: rgb(181, 181, 181);
     }
 }
