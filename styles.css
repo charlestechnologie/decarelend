@@ -129,12 +129,13 @@ header button{
 /* flex pour avoir une partie plus grande que d'autre */
 
 .left{
-    width: 100%;
     margin: 40px;
     padding: 60px;
 }
 .center{
+    width: 100%;
     text-align: center;
+   
 }
 
 .man div.content .carte .right img{
@@ -186,6 +187,7 @@ div.slider{
  }
  .man .content .carte .right .wi{
     align-items: center;
+    width: 120%;
  }
  
 .man div.content .carte .right img.one{
@@ -349,11 +351,11 @@ footer #contact{
     /* flex pour avoir une partie plus grande que d'autre */
     
     .left{
-        width: 100%;
-        margin: 20px;
-        padding: 30px;
+        margin: 10px;
+        padding: 15px;
     }
     .center{
+        width:100%;
         text-align: center;
     }
     .man div.content .carte .right img{
@@ -408,8 +410,8 @@ footer #contact{
      }
 
     .man div.content .carte .right img.one{
-        height: 100px;
-        width: 50px;
+        height: 200px;
+        width: 100px;
         margin-top: 5px;
         float:left;
         margin-left: 5px;
