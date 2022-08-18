@@ -8,9 +8,9 @@ html{
 }
 body{
     font-family: 'Montserrat', sans-serif;
+    max-width: 1115px;
 }
 main{
-    max-width: 1580px;
     margin: auto;
     align-items: center;
 }
@@ -22,27 +22,33 @@ nav{
     justify-content: center;
     align-items: center;
     border-bottom: 5px solid #6f6f6f;
+    height: 100%;
 }
 h5{
     color: #717171;
     font-family: 'Playfair Display', serif;
     font-size: 15px;
 }
+
 .hello{
-    align-items: right;
-    text-align:end;
-
-
+    position: fixed;
+    right: 0;
+    top: 26%;
+    width: 8em;
+    margin-top: -2.5em;
+    z-index: 1;
+    opacity:initial;
 }
 .barre { 
-    background-color: #fff;
-    overflow: auto;
+    background-color:none;
+    overflow:right;
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
     font-size: 20px;
-    position: absolute;
+    position:absolute;
     display: none;
     z-index: 1;
+    align-items: center;
 }
 .barre-element{
     display: block;
@@ -50,20 +56,25 @@ h5{
     border: none;
     cursor: pointer;
 }
+.barre-element:hover{
+    color: #050505;
+    background-color: rgb(248, 248, 248);
+}
 .bouton{
-    display: 8px 16px;
+    border: none;
     text-decoration: none;
     color: inherit;
     background-color: inherit;
-    text-align: center;
+    text-align:center;
 }
+
 .fond{
     color: rgb(5, 5, 5);
     background-color: #f8fafc;
 }
 .frond:hover{
-    color: #6f6f6f;
-    background-color: rgb(116, 149, 177);
+    color: #080808;
+    background-color: rgb(250, 250, 250);
 }
 .grand{
     font-size: 24px;
@@ -71,12 +82,12 @@ h5{
 }
 .deca{
     width: 110px;
-    height: 90px;
+    opacity: 0.7;
 }
 
 nav div.onglet{
-    margin-top: 3px;
-    margin-left: 300px;
+    margin-top: 1px;
+
 }
 nav div.onglet a {
     text-decoration: none;
@@ -84,15 +95,18 @@ nav div.onglet a {
     color: rgb(248, 246, 246);
     border-bottom: 1px solid black;
     font-size: 15px;
+    text-align: center;
 }
     
 header{
-    width: 120%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #000;
-    color: white;
+    background-image:url(/images/IMG-20220812-WA0024.jpg);
+    opacity: 0.9;
+    color: rgb(10, 10, 10);
+    align-items: center;
 }
 header h1{
     font-family: 'Playfair Display', serif;
@@ -100,7 +114,7 @@ header h1{
 }
 header h4{
     margin-top: -20px;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     border-bottom: 1px solid white;
 }
@@ -133,7 +147,7 @@ header button{
     padding: 60px;
 }
 .center{
-    width: 100%;
+    width:auto;
     text-align: center;
    
 }
@@ -145,7 +159,7 @@ header button{
     margin-top: 10px;
 }
 .man .content .left{
-    background-color: #000;
+    background-color: #717171;
     color: #fff;
 }
 div.slider{
@@ -248,28 +262,32 @@ footer #contact{
         color: #717171;
         font-family: 'Playfair Display', serif;
         font-size: 15px;
+        text-align: left;
     }
     .hello{
-        align-items: right;
-        text-align:end;
-    
-    
+        position: fixed;
+        right: 67%;
+        top: 18%;
+        width: 9em;
     }
     .barre { 
         background-color: #fff;
         overflow: auto;
         border-right: 1px solid #ccc;
         border-bottom: 1px solid #ccc;
-        font-size: 10px;
         position: absolute;
-        display: none;
+        display:flex;
+        align-items: center;
         z-index: 1;
+        width: 500px;
     }
     .barre-element{
+        width: 100%;
         display: block;
         padding: 4px 8px;
         border: none;
         cursor: pointer;
+        align-items: center;
     }
     .bouton{
         width: 100%;
@@ -282,6 +300,7 @@ footer #contact{
     .fond{
         color: rgb(5, 5, 5);
         background-color: #f8fafc;
+        position: absolute;
     }
     .frond:hover{
         color: #6f6f6f;
@@ -297,14 +316,15 @@ footer #contact{
     }
     nav div.onglet{
         margin-top: 3px;
-        margin-left: 150px;
+        
     }
     nav div.onglet a {
         text-decoration: none;
         background-color: #000;
         color: rgb(248, 246, 246);
         border-bottom: 1px solid black;
-        font-size: 15px;
+        font-size: 25px;
+        text-align: center;
     }
         
     header{
@@ -313,15 +333,16 @@ footer #contact{
         flex-direction: column;
         align-items: center;
         background-color: #000;
-        color: white;
+        color: rgb(255, 251, 251);
+        
     }
     header h1{
         font-family: 'Playfair Display', serif;
-        font-size: 20px;
+        font-size: 25px;
     }
     header h4{
         margin-top: -10px;
-        font-size: 10px;
+        font-size: 20px;
         text-align: center;
         border-bottom: 1px solid white;
     }
@@ -336,7 +357,7 @@ footer #contact{
         cursor: pointer;
     }
     .main{
-        margin-top: 20px;
+    
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -351,7 +372,8 @@ footer #contact{
     
     .left{
         margin: 5px;
-        padding: 10px;
+        padding: 5px;
+        text-align: center;
     }
     .center{
         width:100%;
@@ -364,8 +386,7 @@ footer #contact{
         margin-top: 10px;
     }
     .man .content .left{
-        width: 1;
-        background-color: #000;
+        background-color: #717171;
         color: #fff;
     }
     div.slider{
@@ -382,7 +403,7 @@ footer #contact{
          
      }
      .slider{
-         opacity: 0.9;
+         opacity: 0,8;
      }
      @keyframes glisse{
          0%{
