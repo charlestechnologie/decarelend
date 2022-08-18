@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    position: sticky;
+    top:0;
+    z-index: 20;
+}
+.navbar-brand{
+    margin-left: 30px;
+    padding: 10px 10px;
+    font-size: 26px;
+    color: #fff!important;
+    font-family: sans-serif;
+}
+.deca{
+    width: 110px;
+    opacity: 0.7;
+}
+.d-block{
+    height: 700px;
+}
+.nav-item{
+    padding: 0 15px;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    color: #fff!important;
+    font-weight: 600;
+    font-size: 15px;
+}
+.nav-link:hover{
+    color: #ccc!important;
+}
+.navbar{
+    background-color:#2e9afe;
+}
+.carousel-caption{
+    top: 50%;
+    transform: rotateY(50%);
+    bottom: initial!important;
+}
+
+.carousel-caption h1{
+    font-size: 56px;
+    color: black;
+
+}
+.carousel-caption h4{
+    color: black;
+    font-size: 40px;
+}
+/* a propos de nous */
+#apropos{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#apropos h2{
+    padding-bottom: 20px;
+}
+#apropos .btn{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #555;
+}
+.bar .progress{
+    border-radius: 16px;
+    margin-bottom: 10px ;
+}
+.progress-bar{
+    border-radius: 16px;
+}
+#message .message{
+    background: #717171;
+    align-items: center;
+}
+form input,form textarea{
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    width: 300px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+}
+/* section services */
+#services{
+    margin-top: 10px;
+    padding: 50px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url(images/IMG-20220812-WA0034.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 100px;
+    color: #efefef;
+}
+#services h2{
+    text-align: center;
+    font-weight: bold;
+}
+#services h2::after{
+    content:"" ;
+    display: block;
+    background: #efefef!important;
+    height: 3px;
+    width: 120px;
+    margin: 20px auto 5px;
+}
+.service{
+    margin-right: 30px;
+    padding: 20px;
+}
+div.pied{
+    background-color: #717171;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    width:3%;
+    height: 5%;
+}
+.pied .one{
+    background-color: #f8fafc;
+    margin: 5px;
+}
+.pied .pie{
+    width: 100px;
+    height: 80px;
+}
+footer .services .service p{
+    max-width: 300px;
+}
+@media screen and (max-width:1152px){
+    .deca{
+        width: 90px;
+        opacity: 0.7;
+    }
+    .navbar-brand{
+        margin-left: 15px;
+        padding: 20px 20px;
+        font-size: px;
+        color: #fff!important;
+        font-family: sans-serif;
+    }
+    .nav-link{
+        text-transform: uppercase;
+        color: #fff!important;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .nav-item{
+        padding: 0 10px;
+    }
+    .d-block{
+        height: 400px;
+    }
+    .carousel-caption  h1{
+        font-size: 30px;
+    }
+    .carousel-caption h4{
+        font-size: 25px;
+    }
+}
