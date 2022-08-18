@@ -267,7 +267,7 @@ footer #contact{
     .hello{
         position: fixed;
         right: 67%;
-        top: 18%;
+        top: 7%;
         width: 9em;
     }
     .barre { 
@@ -276,7 +276,7 @@ footer #contact{
         border-right: 1px solid #ccc;
         border-bottom: 1px solid #ccc;
         position: absolute;
-        display:flex;
+        display:block;
         align-items: center;
         z-index: 1;
         width: 500px;
@@ -312,7 +312,6 @@ footer #contact{
     }
     .deca{
         width: 100px;
-        height: 90px;
     }
     nav div.onglet{
         margin-top: 3px;
