@@ -82,6 +82,7 @@ section .pub h1 p{
 .carousel-caption{
     background: rgba(255, 255, 255, 0.5);
     border-radius: 16px;
+    background-size: cover;
 }
 
 .carousel-caption h1{
