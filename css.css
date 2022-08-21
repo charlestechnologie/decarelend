@@ -2,11 +2,28 @@
     padding: 0;
     margin: 0;
 }
-header{
-    position: sticky;
-    top:0;
-    z-index: 20;
+
+
+.navbar{
+    margin-top: 10px;
+    padding: 50px;
+    padding-bottom: 50px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #efefef;
+    z-index: 80;
 }
+
+.navbar-toggler{
+    background-color: #fff;
+    color: white;
+    z-index: 70;
+}
+.navbar p{
+    text-align: left;
+}
+
 .navbar-brand{
     margin-left: 30px;
     padding: 10px 10px;
@@ -16,7 +33,27 @@ header{
 }
 .deca{
     width: 110px;
-    opacity: 0.7;
+}
+header{
+    background-image: linear-gradient(rgba(104, 89, 89, 0.7),rgba(0,0,0,0.5)),url(images/IMG-20220812-WA0034.jpg);
+
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+header.carousel-item{
+    top: 20%;
+}
+header p {
+    margin-left: 10px;
+}
+header  img{
+    top: 10%;
+    opacity: 0.5;
+}
+header .carousel-caption{
+    top: 40%;
+    transform: rotateY(50%);
+    bottom: initial!important;
 }
 .d-block{
     height: 700px;
@@ -34,13 +71,17 @@ header{
 .nav-link:hover{
     color: #ccc!important;
 }
-.navbar{
-    background-color:#2e9afe;
+section .pub h1 p{
+    margin-left: 20px;
+}
+ .carousel-caption{
+    top: 50%;
+    transform: rotateY(90%);
+    bottom: initial!important;
 }
 .carousel-caption{
-    top: 50%;
-    transform: rotateY(50%);
-    bottom: initial!important;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
 }
 
 .carousel-caption h1{
@@ -52,6 +93,7 @@ header{
     color: black;
     font-size: 40px;
 }
+
 /* a propos de nous */
 #apropos{
     padding-top: 50px;
@@ -65,20 +107,24 @@ header{
     margin-bottom: 30px;
     color: #555;
 }
-.bar .progress{
+.progress{
     border-radius: 16px;
     margin-bottom: 10px ;
 }
 .progress-bar{
     border-radius: 16px;
 }
-#message .message{
-    background: #717171;
-    align-items: center;
+#contact {
+    margin-left: 15px;
+}
+h4{
+    margin-left: 10px;
+
 }
 form input,form textarea{
     display: block;
     margin-top: 20px;
+    margin-left: 10px;
     padding: 10px;
     width: 300px;
     font-family: Arial, sans-serif;
@@ -86,6 +132,10 @@ form input,form textarea{
     border-radius: 5px;
     border-width: 1px;
     border-style: solid;
+}
+form button{
+    margin-left: 15px;
+    border-radius: 5px;
 }
 /* section services */
 #services{
@@ -131,14 +181,17 @@ div.pied{
     width: 100px;
     height: 80px;
 }
-footer .services .service p{
-    max-width: 300px;
+.gallerie{
+    width: 150px;
+    height: 200px;
 }
 @media screen and (max-width:1152px){
     .deca{
-        width: 90px;
-        opacity: 0.7;
+        width: 110px;
+        margin-left: 10px;
+        background-color:rgba(255, 255, 255, 0.5);
     }
+ 
     .navbar-brand{
         margin-left: 15px;
         padding: 20px 20px;
@@ -153,15 +206,16 @@ footer .services .service p{
         font-size: 15px;
     }
     .nav-item{
-        padding: 0 10px;
+        padding: 0 
     }
     .d-block{
-        height: 400px;
+        width:auto;
+        height:auto;
     }
     .carousel-caption  h1{
-        font-size: 30px;
+        font-size: 20px;
     }
     .carousel-caption h4{
-        font-size: 25px;
+        font-size: 15px;
     }
 }
