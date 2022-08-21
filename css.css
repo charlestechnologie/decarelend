@@ -76,13 +76,12 @@ section .pub h1 p{
 }
  .carousel-caption{
     top: 50%;
-    transform: rotateY(90%);
+    transform: rotateY(50%);
     bottom: initial!important;
 }
 .carousel-caption{
     background: rgba(255, 255, 255, 0.5);
     border-radius: 16px;
-    background-size: cover;
 }
 
 .carousel-caption h1{
@@ -213,10 +212,15 @@ div.pied{
         width:auto;
         height:auto;
     }
+    .carousel-caption{
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 16px;
+        align-items: center;
+    }
     .carousel-caption  h1{
         font-size: 20px;
     }
     .carousel-caption h4{
-        font-size: 15px;
+        font-size: 13px;
     }
 }
