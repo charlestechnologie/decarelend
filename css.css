@@ -3,7 +3,6 @@
     margin: 0;
 }
 
-
 .navbar{
     margin-top: 10px;
     padding: 50px;
@@ -113,8 +112,8 @@ section .pub h1 p{
 .progress-bar{
     border-radius: 16px;
 }
-#contact {
-    margin-left: 15px;
+#contact h6{
+    margin-top: 15px;
 }
 h4{
     margin-left: 10px;
@@ -185,6 +184,10 @@ div.pied{
     height: 200px;
 }
 @media screen and (max-width:1152px){
+    body{
+        margin-left: 10px!important;
+   }
+
     .deca{
         width: 100px;
         margin-left: 5px;
